@@ -44,8 +44,7 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "b1c41929-7fd3-4811-85da-89bd5a90e609",
-                "371a9708-6501-456b-a8f6-8e880bdff5c7"
+                "b1c41929-7fd3-4811-85da-89bd5a90e609"
               ],
               "containedElements": [
                 "9a751877-6d85-42c4-87c5-5ee9976b0150"
@@ -183,8 +182,8 @@
                 "text": "Application"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -281,9 +280,34 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "db451f00-d131-4fe1-918b-d8fe17840b9d",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Threat actor Initiates Denial of Service Attack through the brute force approach",
+                  "mitigation": "Limit amount of tries a user can initiate before their account is temporarily blocked",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -477,7 +501,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Fetch Quote of the day",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -491,7 +515,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Fetch Quote of the day"
             ],
             "id": "d17b4565-b5fb-479c-a9b9-e0a7e3be1c37",
             "source": {
@@ -529,61 +553,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "f7944c10-d77e-43ec-927f-81c0524acbad"
-              ]
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "371a9708-6501-456b-a8f6-8e880bdff5c7",
-            "source": {
-              "x": 658,
-              "y": -2390
-            },
-            "target": {
-              "cell": "9a751877-6d85-42c4-87c5-5ee9976b0150",
-              "port": "bd478b79-6cb4-4a69-adfb-3c216ebbaa72"
-            },
-            "vertices": [
-              {
-                "x": 800,
-                "y": -2330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Display Quote of the day",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -597,7 +567,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Display Quote of the day"
             ],
             "id": "7f4a8288-c9cd-485c-82d4-75f0d88fa2f4",
             "source": {
@@ -610,7 +580,7 @@
             },
             "vertices": [
               {
-                "x": 1080,
+                "x": 1100,
                 "y": -2340
               }
             ]
@@ -621,6 +591,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Dr. Todd Wolfe",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
