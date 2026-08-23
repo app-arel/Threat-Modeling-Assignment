@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 701.25,
-              "y": -2573
+              "x": 880,
+              "y": -2590
             },
             "size": {
               "width": 470,
@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "f7944c10-d77e-43ec-927f-81c0524acbad",
             "zIndex": -1,
+            "id": "f7944c10-d77e-43ec-927f-81c0524acbad",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -44,18 +44,24 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "b1c41929-7fd3-4811-85da-89bd5a90e609",
-                "7f4a8288-c9cd-485c-82d4-75f0d88fa2f4",
-                "d17b4565-b5fb-479c-a9b9-e0a7e3be1c37"
+                "b1c41929-7fd3-4811-85da-89bd5a90e609"
               ],
               "containedElements": [
-                "66fd6581-5c25-49e3-8634-1adf2e9508e9"
+                "66fd6581-5c25-49e3-8634-1adf2e9508e9",
+                "91f35773-693e-4b1f-a6fe-3e97be274225"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
             "position": {
-              "x": 600,
+              "x": 610,
               "y": -2450
             },
             "size": {
@@ -74,6 +80,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -157,7 +164,6 @@
               ]
             },
             "id": "a280d091-0bec-4911-8fdd-6c30adcbff42",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -169,6 +175,110 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Display Quote of the day",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Display Quote of the day"
+            ],
+            "id": "7f4a8288-c9cd-485c-82d4-75f0d88fa2f4",
+            "source": {
+              "cell": "66fd6581-5c25-49e3-8634-1adf2e9508e9",
+              "port": "fec91aaa-732e-417a-b85c-bae90d7c9d54"
+            },
+            "target": {
+              "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
+              "port": "44a10792-efe5-4b8f-9d0f-2d11acaed8fe"
+            },
+            "vertices": [
+              {
+                "x": 1120,
+                "y": -2350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Fetch Quote of the day",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Fetch Quote of the day"
+            ],
+            "id": "d17b4565-b5fb-479c-a9b9-e0a7e3be1c37",
+            "source": {
+              "cell": "66fd6581-5c25-49e3-8634-1adf2e9508e9",
+              "port": "0ce61ece-a47d-4e69-82b5-5cd6b8d7c856"
+            },
+            "target": {
+              "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
+              "port": "979446a2-3d25-4cd6-824c-664becfa8b4e"
+            },
+            "vertices": [
+              {
+                "x": 1120,
+                "y": -2500
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -210,8 +320,8 @@
             ],
             "id": "b1c41929-7fd3-4811-85da-89bd5a90e609",
             "source": {
-              "x": 656,
-              "y": -2450
+              "cell": "a280d091-0bec-4911-8fdd-6c30adcbff42",
+              "port": "ab7a9e1f-a82c-457d-a03e-b8fb9f1a01cf"
             },
             "target": {
               "cell": "66fd6581-5c25-49e3-8634-1adf2e9508e9",
@@ -219,122 +329,134 @@
             },
             "vertices": [
               {
-                "x": 800,
+                "x": 810,
                 "y": -2490
               }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Display Quote of the day",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "f7944c10-d77e-43ec-927f-81c0524acbad"
-              ]
-            },
-            "labels": [
-              "Display Quote of the day"
             ],
-            "id": "7f4a8288-c9cd-485c-82d4-75f0d88fa2f4",
-            "source": {
-              "cell": "66fd6581-5c25-49e3-8634-1adf2e9508e9",
-              "port": "fec91aaa-732e-417a-b85c-bae90d7c9d54"
-            },
-            "target": {
-              "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
-              "port": "44a10792-efe5-4b8f-9d0f-2d11acaed8fe"
-            },
-            "vertices": [
-              {
-                "x": 1120,
-                "y": -2340
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Fetch Quote of the day",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "f7944c10-d77e-43ec-927f-81c0524acbad"
-              ]
-            },
-            "labels": [
-              "Fetch Quote of the day"
-            ],
-            "id": "d17b4565-b5fb-479c-a9b9-e0a7e3be1c37",
-            "source": {
-              "cell": "66fd6581-5c25-49e3-8634-1adf2e9508e9",
-              "port": "0ce61ece-a47d-4e69-82b5-5cd6b8d7c856"
-            },
-            "target": {
-              "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
-              "port": "979446a2-3d25-4cd6-824c-664becfa8b4e"
-            },
-            "vertices": [
-              {
-                "x": 1120,
-                "y": -2520
-              }
-            ]
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
-              "x": 900,
+              "x": 910,
               "y": -2480
             },
             "size": {
@@ -346,13 +468,14 @@
                 "text": "Application"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -436,7 +559,6 @@
               ]
             },
             "id": "66fd6581-5c25-49e3-8634-1adf2e9508e9",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Application",
@@ -444,12 +566,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "5c8b3bef-0e0d-4217-9cb3-4c3de3b826e7",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "A threat actor could bombard the system with multiple login attempts to make the system slow or crash.",
+                  "mitigation": "Temporarily block accounts that make more than 10 login attempts in a day.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -476,6 +620,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -559,7 +704,6 @@
               ]
             },
             "id": "91f35773-693e-4b1f-a6fe-3e97be274225",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Database",
@@ -582,6 +726,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Dr. Todd Wolfe",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
