@@ -21,12 +21,12 @@
         "cells": [
           {
             "position": {
-              "x": 700,
-              "y": -2160
+              "x": 610,
+              "y": -2780
             },
             "size": {
-              "width": 530,
-              "height": 330
+              "width": 950,
+              "height": 690
             },
             "attrs": {
               "label": {
@@ -43,13 +43,22 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "crossingFlows": [
+                "b1c41929-7fd3-4811-85da-89bd5a90e609",
+                "9f011de3-0886-424e-ab43-6f8201477ba6"
+              ],
+              "containedElements": [
+                "66fd6581-5c25-49e3-8634-1adf2e9508e9",
+                "91f35773-693e-4b1f-a6fe-3e97be274225",
+                "4062d749-57bf-4815-a533-054f1a4f69a9",
+                "87fa5d1b-c732-41fe-be6c-3ef6d0453af6",
+                "044e776c-aa87-46cd-914d-4af1ef8d5f45"
+              ]
             }
           },
           {
             "position": {
-              "x": 550,
+              "x": 420,
               "y": -2530
             },
             "size": {
@@ -202,7 +211,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login/ Signup",
+              "name": "Check user information \nagainst what is in the database",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -216,54 +225,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Login/ Signup"
-            ],
-            "id": "b1c41929-7fd3-4811-85da-89bd5a90e609",
-            "source": {
-              "cell": "a280d091-0bec-4911-8fdd-6c30adcbff42",
-              "port": "36d68137-7dc2-4c3f-8346-987da487ae2b"
-            },
-            "target": {
-              "cell": "66fd6581-5c25-49e3-8634-1adf2e9508e9",
-              "port": "e9efb306-6bab-4793-8f14-1395f5f6b81d"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "User authentication",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "User authentication"
+              "Check user information \nagainst what is in the database"
             ],
             "id": "c4f6b8e2-61c6-4772-b00f-aa77fb4bc552",
             "source": {
@@ -274,116 +236,12 @@
               "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
               "port": "a6fe8a83-c3fc-4a12-8061-f80ab911c099"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": [
+              {
+                "x": 1050,
+                "y": -2620
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -432,6 +290,309 @@
             },
             "vertices": [],
             "parent": "91f35773-693e-4b1f-a6fe-3e97be274225"
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login/ Signup",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "f7944c10-d77e-43ec-927f-81c0524acbad"
+              ]
+            },
+            "labels": [
+              "Login/ Signup"
+            ],
+            "id": "b1c41929-7fd3-4811-85da-89bd5a90e609",
+            "source": {
+              "cell": "a280d091-0bec-4911-8fdd-6c30adcbff42",
+              "port": "36d68137-7dc2-4c3f-8346-987da487ae2b"
+            },
+            "target": {
+              "cell": "66fd6581-5c25-49e3-8634-1adf2e9508e9",
+              "port": "e9efb306-6bab-4793-8f14-1395f5f6b81d"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request for\nquote of the day",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Request for\nquote of the day"
+            ],
+            "id": "85d22358-6f26-412c-9b38-2687ec61c408",
+            "source": {
+              "cell": "4062d749-57bf-4815-a533-054f1a4f69a9",
+              "port": "522fbf5e-5d26-4738-89ff-0af47f24ca12"
+            },
+            "target": {
+              "cell": "87fa5d1b-c732-41fe-be6c-3ef6d0453af6",
+              "port": "a8a6d8e5-3c75-4896-80c1-5a269a53c0a3"
+            },
+            "vertices": [
+              {
+                "x": 1060,
+                "y": -2420
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Check for the quote assigned\nto the day in the database",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Check for the quote assigned\nto the day in the database"
+            ],
+            "id": "bcc27fb0-f1e9-4070-8e5d-e15e4101b213",
+            "source": {
+              "cell": "87fa5d1b-c732-41fe-be6c-3ef6d0453af6",
+              "port": "8a07502c-55de-457c-b307-e43cdcf8ddaf"
+            },
+            "target": {
+              "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
+              "port": "44a10792-efe5-4b8f-9d0f-2d11acaed8fe"
+            },
+            "vertices": [
+              {
+                "x": 1270,
+                "y": -2400
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send quote of the day to the application",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Send quote of the day to the application"
+            ],
+            "id": "0978bb2f-102b-4240-bdac-7ebc638764ee",
+            "source": {
+              "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
+              "port": "44a10792-efe5-4b8f-9d0f-2d11acaed8fe"
+            },
+            "target": {
+              "cell": "4062d749-57bf-4815-a533-054f1a4f69a9",
+              "port": "e54ee5ce-b0c2-4bb1-be6d-41853e37b5dd"
+            },
+            "vertices": [
+              {
+                "x": 1360,
+                "y": -2430
+              },
+              {
+                "x": 1110,
+                "y": -2240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send quote to\nuser dashboard",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Send quote to\nuser dashboard"
+            ],
+            "id": "ce2610bb-1e3b-480b-b1d2-7737bcab47a4",
+            "source": {
+              "cell": "4062d749-57bf-4815-a533-054f1a4f69a9",
+              "port": "a2dafef1-8a8d-44d4-9904-b19c97918c46"
+            },
+            "target": {
+              "cell": "044e776c-aa87-46cd-914d-4af1ef8d5f45",
+              "port": "8a07502c-55de-457c-b307-e43cdcf8ddaf"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User views quote of the day",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "f7944c10-d77e-43ec-927f-81c0524acbad"
+              ]
+            },
+            "labels": [
+              "User views quote of the day"
+            ],
+            "id": "9f011de3-0886-424e-ab43-6f8201477ba6",
+            "source": {
+              "cell": "a280d091-0bec-4911-8fdd-6c30adcbff42",
+              "port": "bd478b79-6cb4-4a69-adfb-3c216ebbaa72"
+            },
+            "target": {
+              "cell": "044e776c-aa87-46cd-914d-4af1ef8d5f45",
+              "port": "a8a6d8e5-3c75-4896-80c1-5a269a53c0a3"
+            }
           },
           {
             "position": {
@@ -577,8 +738,8 @@
           },
           {
             "position": {
-              "x": 1156.25,
-              "y": -2570
+              "x": 1410,
+              "y": -2610
             },
             "size": {
               "width": 120,
@@ -726,128 +887,8 @@
           },
           {
             "position": {
-              "x": 790,
-              "y": -2330
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Display Quot"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "0cc628c1-7320-40ef-9934-e2dca31062f2"
-                },
-                {
-                  "group": "right",
-                  "id": "8a07502c-55de-457c-b307-e43cdcf8ddaf"
-                },
-                {
-                  "group": "bottom",
-                  "id": "7ab7e4c3-d329-40f8-a290-cca21c501f74"
-                },
-                {
-                  "group": "left",
-                  "id": "a8a6d8e5-3c75-4896-80c1-5a269a53c0a3"
-                }
-              ]
-            },
-            "id": "0487cb2c-534e-4bcd-8a82-9d4452b22971",
-            "zIndex": 15,
-            "data": {
-              "type": "tm.Process",
-              "name": "Display Quot",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 880,
-              "y": -2500
+              "x": 873.75,
+              "y": -2510
             },
             "size": {
               "width": 112.5,
@@ -960,6 +1001,268 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 1150,
+              "y": -2430
+            },
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Fetch quote \nof the day"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0cc628c1-7320-40ef-9934-e2dca31062f2"
+                },
+                {
+                  "group": "right",
+                  "id": "8a07502c-55de-457c-b307-e43cdcf8ddaf"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7ab7e4c3-d329-40f8-a290-cca21c501f74"
+                },
+                {
+                  "group": "left",
+                  "id": "a8a6d8e5-3c75-4896-80c1-5a269a53c0a3"
+                }
+              ]
+            },
+            "id": "87fa5d1b-c732-41fe-be6c-3ef6d0453af6",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Process",
+              "name": "Fetch quote \nof the day",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 640,
+              "y": -2460
+            },
+            "size": {
+              "width": 110,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "Display quote \nof the day"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0cc628c1-7320-40ef-9934-e2dca31062f2"
+                },
+                {
+                  "group": "right",
+                  "id": "8a07502c-55de-457c-b307-e43cdcf8ddaf"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7ab7e4c3-d329-40f8-a290-cca21c501f74"
+                },
+                {
+                  "group": "left",
+                  "id": "a8a6d8e5-3c75-4896-80c1-5a269a53c0a3"
+                }
+              ]
+            },
+            "id": "044e776c-aa87-46cd-914d-4af1ef8d5f45",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Process",
+              "name": "Display quote \nof the day",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "93e11888-5b4f-44a6-9c67-0d380ffb0474",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "A threat actor can change the quote of the day to something malicious in transit",
+                  "mitigation": "Encrypt the packets in transit",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 3,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
           }
         ],
         "description": "The Diagram showing the threat and how it relates with the system"
@@ -967,6 +1270,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Dr. Todd Wolfe",
-    "threatTop": 4
+    "threatTop": 6
   }
 }
