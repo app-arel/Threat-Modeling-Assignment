@@ -73,8 +73,8 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -171,9 +171,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "e2ea8eb4-d1e6-4fa5-b8af-040bf790a22e",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "User information might be stolen or coerced out of the user through manipulation by a threat actor",
+                  "mitigation": "2-factor authentication",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -327,12 +345,6 @@
               "cell": "66fd6581-5c25-49e3-8634-1adf2e9508e9",
               "port": "0ce61ece-a47d-4e69-82b5-5cd6b8d7c856"
             },
-            "vertices": [
-              {
-                "x": 810,
-                "y": -2490
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -452,7 +464,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": -2490
+              }
+            ]
           },
           {
             "position": {
@@ -610,11 +628,13 @@
                 "text": "Database"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -711,13 +731,40 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "383b746c-dfdb-45da-8c07-a674547fa20a",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "A threat actor may maliciously gain access to the database and leak users' personal information",
+                  "mitigation": "Encryption and data minimization. A system like this where users sign i just to get the quote of the day does not need sensitive user information.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ],
@@ -726,6 +773,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Dr. Todd Wolfe",
-    "threatTop": 2
+    "threatTop": 4
   }
 }
