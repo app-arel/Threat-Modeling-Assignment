@@ -267,153 +267,15 @@
             ],
             "id": "c4f6b8e2-61c6-4772-b00f-aa77fb4bc552",
             "source": {
-              "x": 870,
-              "y": -2420
+              "cell": "66fd6581-5c25-49e3-8634-1adf2e9508e9",
+              "port": "fe7e2e60-fd56-4902-9688-d5cac82145c5"
             },
             "target": {
               "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
               "port": "a6fe8a83-c3fc-4a12-8061-f80ab911c099"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
             },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "User found in\nthe database",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "User found in\nthe database"
-            ],
-            "id": "49aa756a-bcd9-460c-aee5-c962a78ead75",
-            "source": {
-              "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
-              "port": "44a10792-efe5-4b8f-9d0f-2d11acaed8fe"
-            },
-            "target": {
-              "cell": "4062d749-57bf-4815-a533-054f1a4f69a9",
-              "port": "2eecf692-1e3e-456a-91ee-e27388c85a2f"
-            },
-            "vertices": [],
-            "parent": "91f35773-693e-4b1f-a6fe-3e97be274225",
             "tools": {
               "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -524,9 +386,57 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User found in\nthe database",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "User found in\nthe database"
+            ],
+            "id": "49aa756a-bcd9-460c-aee5-c962a78ead75",
+            "source": {
+              "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
+              "port": "44a10792-efe5-4b8f-9d0f-2d11acaed8fe"
+            },
+            "target": {
+              "cell": "4062d749-57bf-4815-a533-054f1a4f69a9",
+              "port": "522fbf5e-5d26-4738-89ff-0af47f24ca12"
+            },
+            "vertices": [],
+            "parent": "91f35773-693e-4b1f-a6fe-3e97be274225"
+          },
+          {
             "position": {
-              "x": 770,
-              "y": -2470
+              "x": 810,
+              "y": -2700
             },
             "size": {
               "width": 100,
@@ -936,8 +846,8 @@
           },
           {
             "position": {
-              "x": 1160,
-              "y": -2310
+              "x": 880,
+              "y": -2500
             },
             "size": {
               "width": 112.5,
