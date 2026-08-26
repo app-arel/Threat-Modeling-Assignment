@@ -176,7 +176,7 @@
                   "title": "New STRIDE threat",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Repudiation",
+                  "type": "Spoofing",
                   "description": "User information might be stolen or coerced out of the user through manipulation by a threat actor",
                   "mitigation": "2-factor authentication",
                   "modelType": "STRIDE",
@@ -186,9 +186,16 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 1,
                 "repudiation": 1
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -280,6 +287,7 @@
               "User found in\nthe database"
             ],
             "id": "49aa756a-bcd9-460c-aee5-c962a78ead75",
+            "parent": "91f35773-693e-4b1f-a6fe-3e97be274225",
             "source": {
               "cell": "91f35773-693e-4b1f-a6fe-3e97be274225",
               "port": "44a10792-efe5-4b8f-9d0f-2d11acaed8fe"
@@ -288,8 +296,7 @@
               "cell": "4062d749-57bf-4815-a533-054f1a4f69a9",
               "port": "522fbf5e-5d26-4738-89ff-0af47f24ca12"
             },
-            "vertices": [],
-            "parent": "91f35773-693e-4b1f-a6fe-3e97be274225"
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -906,6 +913,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -989,7 +997,6 @@
               ]
             },
             "id": "4062d749-57bf-4815-a533-054f1a4f69a9",
-            "zIndex": 16,
             "data": {
               "type": "tm.Actor",
               "name": "Application",
@@ -1023,6 +1030,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1106,7 +1114,6 @@
               ]
             },
             "id": "87fa5d1b-c732-41fe-be6c-3ef6d0453af6",
-            "zIndex": 17,
             "data": {
               "type": "tm.Process",
               "name": "Fetch quote \nof the day",
@@ -1143,6 +1150,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -1226,7 +1234,6 @@
               ]
             },
             "id": "044e776c-aa87-46cd-914d-4af1ef8d5f45",
-            "zIndex": 18,
             "data": {
               "type": "tm.Process",
               "name": "Display quote \nof the day",
